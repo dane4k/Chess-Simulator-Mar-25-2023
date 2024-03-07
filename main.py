@@ -496,6 +496,7 @@ def move_using_the_record(moves_to_read):
 
 
 to_read_or_not_to_read = input('Читаем игру из файла? Если да, введите название .txt файла с нотацией игры: ')
+
 if to_read_or_not_to_read[-3:] == 'txt':
     moves_to_read = file_transcript(to_read_or_not_to_read)
     if move_using_the_record(moves_to_read):
@@ -505,8 +506,3 @@ if to_read_or_not_to_read[-3:] == 'txt':
 else:
     if move():
         print('\033[32mКонец игры\033[0m')
-
-# 1 3 8 сложности
-# рокировка готова
-# запись готова
-# чтение воспроизведение переход готовы
